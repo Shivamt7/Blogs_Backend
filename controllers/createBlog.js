@@ -3,6 +3,8 @@ const Blog = require('../models/blog')
 
 exports.createBlog = async(req, res) => {
     try {
+
+        console.log('Loda lassan')
         const { title, description, content } = req.body;
 
         const blogCreate = await Blog.create({title, description, content})

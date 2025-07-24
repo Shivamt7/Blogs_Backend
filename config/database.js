@@ -12,6 +12,7 @@ const dbConnect = () => {
       console.log("Issue while connecting to Database");
       console.error(err.message);
       process.exitCode = 1;
+      process.exit(1);
     });
 };
 
